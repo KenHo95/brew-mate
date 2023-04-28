@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import CoffeeRecipePage from "./pages/CoffeeRecipePage";
+import ViewReceipeDropDown from "./components/ViewReceipeDropDown";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,6 +25,8 @@ class App extends React.Component {
             recipeGrindType={this.state.recipeGrindType}
             recipeTime={this.state.recipeTime}
           />
+
+          <ViewReceipeDropDown />
         </header>
       </div>
     );

@@ -8,7 +8,7 @@ class CoffeeRecipePage extends React.Component {
     return (
       <div>
         <img src={logo} className="App-logo" alt="logo" />
-        <Table bordered hover style={{ color: "white", width: "400px" }}>
+        <Table bordered style={{ color: "white", width: "400px" }}>
           <thead>
             <tr>
               <th>Coffee</th>
