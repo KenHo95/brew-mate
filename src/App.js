@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import CoffeeRecipePage from "./pages/CoffeeRecipePage";
-import ViewReceipeDropDown from "./components/ViewReceipeDropDown";
+import ViewRecipeDropDown from "./components/ViewRecipeDropDown";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends React.Component {
@@ -26,7 +26,7 @@ class App extends React.Component {
             recipeTime={this.state.recipeTime}
           />
 
-          <ViewReceipeDropDown />
+          <ViewRecipeDropDown />
         </header>
       </div>
     );

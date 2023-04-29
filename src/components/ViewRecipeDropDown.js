@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
-class ViewReceipeDropDown extends React.Component {
+class ViewRecipeDropDown extends React.Component {
   render() {
     return (
-      <div style={{ width: "800px", "align-self": "start" }}>
-        <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+      <div style={{ width: "1050px", "align-self": "start" }}>
+        <DropdownButton id="dropdown-basic-button" title="View Recipes">
           <Dropdown.Item href="#/action-1">
             James Hoffman’s V60 method
           </Dropdown.Item>
@@ -21,4 +21,4 @@ class ViewReceipeDropDown extends React.Component {
   }
 }
 
-export default ViewReceipeDropDown;
+export default ViewRecipeDropDown;
