@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import CoffeeRecipePage from "./pages/CoffeeRecipePage";
-import ViewRecipeDropDown from "./components/ViewRecipeDropDown";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends React.Component {
@@ -12,7 +11,25 @@ class App extends React.Component {
       recipeWaterML: 2,
       recipeGrindType: "Fine-Coarse",
       recipeTime: "3min",
+      recipeInstructions: [null],
     };
+    this.handleRecipeDropdownClick = this.handleRecipeDropdownClick.bind(this);
+  }
+
+  handleRecipeDropdownClick(
+    recipeCoffeeGrams,
+    recipeWaterML,
+    recipeGrindType,
+    recipeTime,
+    recipeInstructions
+  ) {
+    this.setState({
+      recipeCoffeeGrams: recipeCoffeeGrams,
+      recipeWaterML: recipeWaterML,
+      recipeGrindType: recipeGrindType,
+      recipeTime: recipeTime,
+      recipeInstructions: recipeInstructions,
+    });
   }
 
   render() {
@@ -24,9 +41,8 @@ class App extends React.Component {
             recipeWaterML={this.state.recipeWaterML}
             recipeGrindType={this.state.recipeGrindType}
             recipeTime={this.state.recipeTime}
+            onRecipeDropdownClick={this.handleRecipeDropdownClick}
           />
-
-          <ViewRecipeDropDown />
         </header>
       </div>
     );
