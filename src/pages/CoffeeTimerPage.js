@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TimerDisplay from "../components/TimerDisplay";
+import Button from "react-bootstrap/Button";
 
 class CoffeeTimerPage extends React.Component {
   constructor(props) {
@@ -18,12 +19,23 @@ class CoffeeTimerPage extends React.Component {
   }
 
   render() {
+    const isTimerPaused = this.state.isTimerPaused;
+
     return (
       <div>
-        <TimerDisplay
-          isTimerPaused={this.state.isTimerPaused}
-          handlePauseResumeButtonClick={this.handlePauseResumeButtonClick}
-        />
+        <TimerDisplay isTimerPaused={isTimerPaused} />
+        <br />
+        <Button onClick={this.handlePauseResumeButtonClick}>
+          {isTimerPaused ? "Resume" : "Pause"}
+        </Button>
+        <br />
+        <br />
+        {isTimerPaused && (
+          <Button onClick={this.props.handleStartStopButtonClick}>
+            {this.props.isRecipePageDisplay ? "Start" : "Stop"}
+          </Button>
+        )}
+        <br />
       </div>
     );
   }

@@ -35,11 +35,6 @@ class TimerDisplay extends React.Component {
         <span>
           {minElapsed >= 1 ? minElapsed + " min " : "0 min"} {secElapsed} sec
         </span>
-        <br />
-        <br />
-        <Button onClick={this.props.handlePauseResumeButtonClick}>
-          {this.props.isTimerPaused ? "Resume" : "Pause"}
-        </Button>
       </div>
     );
   }
