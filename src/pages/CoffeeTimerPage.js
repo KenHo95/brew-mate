@@ -19,6 +19,7 @@ class CoffeeTimerPage extends React.Component {
 
   render() {
     const isTimerPaused = this.state.isTimerPaused;
+    const isRecipePageActive = this.props.isRecipePageDisplay;
 
     return (
       <div>
@@ -30,8 +31,11 @@ class CoffeeTimerPage extends React.Component {
         <br />
         <br />
         {isTimerPaused && (
-          <Button onClick={this.props.handleStartStopButtonClick}>
-            {this.props.isRecipePageDisplay ? "Start" : "Stop"}
+          <Button
+            variant={isRecipePageActive ? "primary" : "danger"}
+            onClick={this.props.handleStartStopButtonClick}
+          >
+            {isRecipePageActive ? "Start" : "Stop"}
           </Button>
         )}
         <br />
