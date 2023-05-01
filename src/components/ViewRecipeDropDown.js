@@ -7,7 +7,11 @@ class ViewRecipeDropDown extends React.Component {
   render() {
     return (
       <div style={{ width: "1050px", "align-self": "start" }}>
-        <DropdownButton id="dropdown-basic-button" title="View Recipes">
+        <DropdownButton
+          id="dropdown-basic-button"
+          title="View Recipes"
+          className="view-button"
+        >
           <Dropdown.Item href="#/action-1">
             James Hoffman’s V60 method
           </Dropdown.Item>
