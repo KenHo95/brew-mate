@@ -39,7 +39,6 @@ class App extends React.Component {
   }
 
   handleStartStopButtonClick() {
-    console.log("start/stop button clicked");
     this.setState({
       isRecipePageDisplay:
         this.state.isRecipePageDisplay === true ? false : true,

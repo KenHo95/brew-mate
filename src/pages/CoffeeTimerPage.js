@@ -12,7 +12,6 @@ class CoffeeTimerPage extends React.Component {
   }
 
   handlePauseResumeButtonClick() {
-    console.log("pause/resume button clicked");
     this.setState({
       isTimerPaused: this.state.isTimerPaused ? false : true,
     });
