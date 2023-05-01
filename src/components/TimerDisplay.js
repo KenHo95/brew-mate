@@ -1,14 +1,18 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
 
 class TimerDisplay extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { timeElapsed: 55 };
+    this.state = { timeElapsed: 0 };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
+    this.timerID = setInterval(
+      () => (this.props.isTimerPaused ? this.state.timeElapsed : this.tick()),
+      1000
+    );
   }
 
   componentWillUnmount() {
@@ -20,6 +24,7 @@ class TimerDisplay extends React.Component {
       timeElapsed: this.state.timeElapsed + 1,
     });
   }
+
   render() {
     const minElapsed = Math.floor(this.state.timeElapsed / 60);
     const secElapsed = this.state.timeElapsed % 60;
@@ -27,7 +32,14 @@ class TimerDisplay extends React.Component {
     return (
       <div>
         <h2>Time Elapsed</h2>
-        {minElapsed >= 1 ? minElapsed + " min " : "0 min"} {secElapsed} sec
+        <span>
+          {minElapsed >= 1 ? minElapsed + " min " : "0 min"} {secElapsed} sec
+        </span>
+        <br />
+        <br />
+        <Button onClick={this.props.handlePauseResumeButtonClick}>
+          {this.props.isTimerPaused ? "Resume" : "Pause"}
+        </Button>
       </div>
     );
   }
