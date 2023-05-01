@@ -51,11 +51,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Button onClick={this.handleStartStopButtonClick}>
-            {isRecipePageActive ? "Start" : "Stop"}
-          </Button>
-          <br />
-
           {isRecipePageActive ? (
             <CoffeeRecipePage
               recipeCoffeeGrams={this.state.recipeCoffeeGrams}
@@ -63,9 +58,14 @@ class App extends React.Component {
               recipeGrindType={this.state.recipeGrindType}
               recipeTime={this.state.recipeTime}
               onRecipeDropdownClick={this.handleRecipeDropdownClick}
+              isRecipePageDisplay={isRecipePageActive}
+              handleStartStopButtonClick={this.handleStartStopButtonClick}
             />
           ) : (
-            <CoffeeTimerPage />
+            <CoffeeTimerPage
+              isRecipePageDisplay={isRecipePageActive}
+              handleStartStopButtonClick={this.handleStartStopButtonClick}
+            />
           )}
         </header>
       </div>

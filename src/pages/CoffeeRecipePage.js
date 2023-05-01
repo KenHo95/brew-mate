@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../coffee-garden-ai.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Table from "react-bootstrap/Table";
+import Button from "react-bootstrap/Button";
 import ViewRecipeDropDown from "../components/ViewRecipeDropDown";
 
 class CoffeeRecipePage extends React.Component {
@@ -45,6 +46,10 @@ class CoffeeRecipePage extends React.Component {
             </tr>
           </tbody>
         </Table>
+
+        <Button onClick={this.props.handleStartStopButtonClick}>
+          {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
+        </Button>
 
         <ViewRecipeDropDown
           onRecipeDropdownClick={this.props.onRecipeDropdownClick}
