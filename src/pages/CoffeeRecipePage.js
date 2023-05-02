@@ -22,7 +22,7 @@ class CoffeeRecipePage extends React.Component {
         </Button>
 
         <ViewRecipeDropDown
-          onRecipeDropdownClick={this.props.onRecipeDropdownClick}
+          handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
         />
       </div>
     );
