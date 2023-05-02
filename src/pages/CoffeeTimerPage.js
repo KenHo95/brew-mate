@@ -7,7 +7,7 @@ import InstructionsDisplay from "../components/InstructionsDisplay";
 class CoffeeTimerPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isTimerPaused: false, timeElapsed: 104 };
+    this.state = { isTimerPaused: false, timeElapsed: 43 };
     this.handlePauseResumeButtonClick =
       this.handlePauseResumeButtonClick.bind(this);
     this.tick = this.tick.bind(this);

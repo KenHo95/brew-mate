@@ -18,14 +18,15 @@ class CoffeeRecipePage extends React.Component {
           recipeTime={this.props.recipeTime}
         />
 
-        <Button onClick={this.props.handleStartStopButtonClick}>
-          {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
-        </Button>
-
         <div className="button-container">
           <ViewRecipeDropDown
             handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
           />
+
+          <Button onClick={this.props.handleStartStopButtonClick}>
+            {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
+          </Button>
+
           <PreparationPopUp />
         </div>
       </div>

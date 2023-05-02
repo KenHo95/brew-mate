@@ -18,13 +18,13 @@ class ViewRecipeDropDown extends React.Component {
                 30,
                 500,
                 "Medium fine",
-                "3min30sec",
+                "3 min 30 sec",
                 {
-                  0: "Pre-wet with 60g water. Swirl brewer until the slurry is even. Bloom for up to 45 s",
-                  45: "Complete the first main pour till 300g in the next 30s.",
-                  75: "Gently complete second main pour till 500g in the next 30s.",
-                  105: "Stir gently clockwise and anticlockwise to kick grounds from the sides. Gently swirl brewer to flatten coffee bed for even extraction",
-                  210: "Aim to finish drawdown by 3min 30s.",
+                  45: "Pre-wet with 60g water. Swirl brewer until the slurry is even. Bloom for up to 45 s",
+                  75: "Complete the first main pour till 300g in the next 30s.",
+                  105: "Gently complete second main pour till 500g in the next 30s.",
+                  210: "Stir gently clockwise and anticlockwise to kick grounds from the sides. Gently swirl brewer to flatten coffee bed for even extraction",
+                  211: "Aim to finish drawdown by 3min 30s.",
                 }
               )
             }
@@ -37,15 +37,15 @@ class ViewRecipeDropDown extends React.Component {
                 20,
                 300,
                 "Coarse",
-                "3min30sec",
+                "3 min 45 sec",
                 // Control the balance of the coffee by modifying the 1st and 2nd pours. For a sweeter brew, make a smaller first pour (e.g. 50g). For more acidity, a larger one will do the trick. Use either less or more water for the second pour to compensate for the difference (if any) in the first one. The 3rd, 4th and 5th pours can be tweaked to 2 larger 90g pours for a weaker brew, or into 4 smaller 45g pours for a stronger one.
-                [
-                  "1st Pour: Add 60g of water",
-                  "2nd Pour: Add 60g of water",
-                  "3rd Pour: Add 60g of water",
-                  "4th Pour: Add 60g of water",
-                  "5th Pour: Add 60g of water",
-                ]
+                {
+                  45: "1st Pour: Add 60g of water",
+                  90: "2nd Pour: Add 60g of water",
+                  135: "3rd Pour: Add 60g of water",
+                  180: "4th Pour: Add 60g of water",
+                  225: "5th Pour: Add 60g of water. Aim to finish drawdown by 3min 30s.",
+                }
               )
             }
           >
@@ -57,13 +57,11 @@ class ViewRecipeDropDown extends React.Component {
                 12,
                 120,
                 "Medium fine",
-                "3min",
-                [
-                  "Pour in 12g of coffee, shaking the V60 lightly to level the grounds.",
-                  "Pour boiling water from the centre of the grounds, spiralling outwards. Let it pre-wet for 30s.",
-                  "Pour the rest of the brew with the same spiral motion, taking special care to avoid pouring on the filter paper itself.",
-                  "Remove the dripper once your brew is finished.",
-                ]
+                "3 min",
+                {
+                  30: "Pour water from centre of the grounds, spiralling outwards. Let it pre-wet for 30s.",
+                  180: "Pour rest of the brew with same spiral motion. Avoid pouring on filter paper itself.",
+                }
               )
             }
           >
