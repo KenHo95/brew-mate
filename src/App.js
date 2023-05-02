@@ -4,6 +4,7 @@ import PreparationPopUp from "./components/PreparationPopUp";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import ViewRecipeDropDown from "./components/ViewRecipeDropDown";
 import CoffeeRecipePage from "./pages/CoffeeRecipePage";
 import CoffeeTimerPage from "./pages/CoffeeTimerPage";
 
@@ -52,7 +53,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-
           {isRecipePageActive ? (
             <CoffeeRecipePage
               recipeCoffeeGrams={this.state.recipeCoffeeGrams}
@@ -70,12 +70,11 @@ class App extends React.Component {
               recipeInstructions={this.state.recipeInstructions}
             />
           )}
-          
+
           <div className="button-container">
             <ViewRecipeDropDown />
             <PreparationPopUp />
           </div>
-
         </header>
       </div>
     );

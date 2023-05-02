@@ -6,7 +6,7 @@ class InstructionsDisplay extends React.Component {
   render() {
     const instructionIntervals = Object.keys(this.props.recipeInstructions);
 
-    const instructions = Object.values(this.props.recipeInstructions);
+    //const instructions = Object.values(this.props.recipeInstructions);
 
     let IndexInstruction = instructionIntervals.filter(
       (interval) => interval > this.props.timeElapsed

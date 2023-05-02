@@ -6,9 +6,12 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 class ViewRecipeDropDown extends React.Component {
   render() {
     return (
-
       <div style={{ width: "1050px", alignSelf: "start" }}>
-        <DropdownButton id="recipe-dropdown-button" title="View Recipes" className="view-button">
+        <DropdownButton
+          id="recipe-dropdown-button"
+          title="View Recipes"
+          className="view-button"
+        >
           <Dropdown.Item
             onClick={() =>
               this.props.handleRecipeDropdownClick(
@@ -26,7 +29,6 @@ class ViewRecipeDropDown extends React.Component {
               )
             }
           >
-
             James Hoffman’s V60 method
           </Dropdown.Item>
           <Dropdown.Item
@@ -36,11 +38,13 @@ class ViewRecipeDropDown extends React.Component {
                 300,
                 "Coarse",
                 "3min30sec",
+                // Control the balance of the coffee by modifying the 1st and 2nd pours. For a sweeter brew, make a smaller first pour (e.g. 50g). For more acidity, a larger one will do the trick. Use either less or more water for the second pour to compensate for the difference (if any) in the first one. The 3rd, 4th and 5th pours can be tweaked to 2 larger 90g pours for a weaker brew, or into 4 smaller 45g pours for a stronger one.
                 [
-                  "Add 60g of water per pour 5 times, waiting 45s between each pour. This results in a total brew of 300g",
-                  "Control the balance of the coffee by modifying the 1st and 2nd pours. For a sweeter brew, make a smaller first pour (e.g. 50g). For more acidity, a larger one will do the trick",
-                  "Use either less or more water for the second pour to compensate for the difference (if any) in the first one.",
-                  "The 3rd, 4th and 5th pours can be tweaked to 2 larger 90g pours for a weaker brew, or into 4 smaller 45g pours for a stronger one.",
+                  "1st Pour: Add 60g of water",
+                  "2nd Pour: Add 60g of water",
+                  "3rd Pour: Add 60g of water",
+                  "4th Pour: Add 60g of water",
+                  "5th Pour: Add 60g of water",
                 ]
               )
             }
