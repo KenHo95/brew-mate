@@ -3,7 +3,6 @@ import "./App.css";
 import PreparationPopUp from "./components/PreparationPopUp";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
 
 import CoffeeRecipePage from "./pages/CoffeeRecipePage";
 import CoffeeTimerPage from "./pages/CoffeeTimerPage";
@@ -16,7 +15,7 @@ class App extends React.Component {
       recipeWaterML: 2,
       recipeGrindType: "Fine-Coarse",
       recipeTime: "3min",
-      recipeInstructions: [null],
+      recipeInstructions: {},
       isRecipePageDisplay: true,
     };
     this.handleRecipeDropdownClick = this.handleRecipeDropdownClick.bind(this);
@@ -60,7 +59,7 @@ class App extends React.Component {
               recipeWaterML={this.state.recipeWaterML}
               recipeGrindType={this.state.recipeGrindType}
               recipeTime={this.state.recipeTime}
-              onRecipeDropdownClick={this.handleRecipeDropdownClick}
+              handleRecipeDropdownClick={this.handleRecipeDropdownClick}
               isRecipePageDisplay={isRecipePageActive}
               handleStartStopButtonClick={this.handleStartStopButtonClick}
             />
@@ -68,6 +67,7 @@ class App extends React.Component {
             <CoffeeTimerPage
               isRecipePageDisplay={isRecipePageActive}
               handleStartStopButtonClick={this.handleStartStopButtonClick}
+              recipeInstructions={this.state.recipeInstructions}
             />
           )}
           
