@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import PreparationPopUp from "./components/PreparationPopUp";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 
@@ -51,6 +53,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
+
           {isRecipePageActive ? (
             <CoffeeRecipePage
               recipeCoffeeGrams={this.state.recipeCoffeeGrams}
@@ -67,6 +70,12 @@ class App extends React.Component {
               handleStartStopButtonClick={this.handleStartStopButtonClick}
             />
           )}
+          
+          <div className="button-container">
+            <ViewRecipeDropDown />
+            <PreparationPopUp />
+          </div>
+
         </header>
       </div>
     );

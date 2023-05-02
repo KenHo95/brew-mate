@@ -6,8 +6,9 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 class ViewRecipeDropDown extends React.Component {
   render() {
     return (
-      <div style={{ width: "100px", alignSelf: "start" }}>
-        <DropdownButton id="recipe-dropdown-button" title="View Recipes">
+
+      <div style={{ width: "1050px", alignSelf: "start" }}>
+        <DropdownButton id="recipe-dropdown-button" title="View Recipes" className="view-button">
           <Dropdown.Item
             onClick={() =>
               this.props.onRecipeDropdownClick(
@@ -29,6 +30,7 @@ class ViewRecipeDropDown extends React.Component {
               )
             }
           >
+
             James Hoffman’s V60 method
           </Dropdown.Item>
           <Dropdown.Item

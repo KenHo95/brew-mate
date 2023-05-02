@@ -17,3 +17,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px; /* optional: limit the container width */
+}
+
+.prep-button,
+.view-button {
+  width: 100px; /* optional: adjust button width */
+}
