@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/brew-mate/static/css/main.a0882aec.css",
+    "main.js": "/brew-mate/static/js/main.2c2da986.js",
+    "static/js/787.0e41534f.chunk.js": "/brew-mate/static/js/787.0e41534f.chunk.js",
+    "static/media/coffee-garden-ai.jpg": "/brew-mate/static/media/coffee-garden-ai.aab0cca8345f0a2d4561.jpg",
+    "index.html": "/brew-mate/index.html",
+    "main.a0882aec.css.map": "/brew-mate/static/css/main.a0882aec.css.map",
+    "main.2c2da986.js.map": "/brew-mate/static/js/main.2c2da986.js.map",
+    "787.0e41534f.chunk.js.map": "/brew-mate/static/js/787.0e41534f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0882aec.css",
+    "static/js/main.2c2da986.js"
+  ]
+}
