@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import RecipeDisplay from "../components/RecipeDisplay";
 import ViewRecipeDropDown from "../components/ViewRecipeDropDown";
+import PreparationPopUp from "../components/PreparationPopUp";
 
 class CoffeeRecipePage extends React.Component {
   render() {
@@ -21,9 +22,12 @@ class CoffeeRecipePage extends React.Component {
           {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
         </Button>
 
-        <ViewRecipeDropDown
-          handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
-        />
+        <div className="button-container">
+          <ViewRecipeDropDown
+            handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
+          />
+          <PreparationPopUp />
+        </div>
       </div>
     );
   }
