@@ -15,6 +15,27 @@ class ViewRecipeDropDown extends React.Component {
           <Dropdown.Item
             onClick={() =>
               this.props.handleRecipeDropdownClick(
+                15,
+                250,
+                "Medium fine",
+                "3 min",
+                {
+                  45: "Pour 50g of water to bloom. Gently Swirl. Let it bloom for 45s",
+                  70: "Pour up to 100g total, then pause for 10s",
+                  90: "Pour up to 150g total, then pause for 10s",
+                  110: "Pour up to 200g total, then pause for 10s",
+                  120: "Pour up to 250g total, then pause for 10s",
+                  125: "Gently swirl",
+                  130: "Drawdown should finish around 3:00, but expect some variance here. Taste is the most important thing!",
+                }
+              )
+            }
+          >
+            James Hoffman’s 1 Cup V60 Technique
+          </Dropdown.Item>
+          <Dropdown.Item
+            onClick={() =>
+              this.props.handleRecipeDropdownClick(
                 30,
                 500,
                 "Medium fine",
@@ -24,7 +45,7 @@ class ViewRecipeDropDown extends React.Component {
                   75: "Complete the first main pour till 300g in the next 30s.",
                   105: "Gently complete second main pour till 500g in the next 30s.",
                   210: "Stir gently clockwise and anticlockwise to kick grounds from the sides. Gently swirl brewer to flatten coffee bed for even extraction",
-                  211: "Aim to finish drawdown by 3min 30s.",
+                  215: "Aim to finish drawdown by 3min 30s.",
                 }
               )
             }

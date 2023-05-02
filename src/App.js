@@ -9,10 +9,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      recipeCoffeeGrams: 1,
-      recipeWaterML: 2,
-      recipeGrindType: "Fine-Coarse",
-      recipeTime: "3min",
+      recipeCoffeeGrams: "-",
+      recipeWaterML: "-",
+      recipeGrindType: "-",
+      recipeTime: "-",
       recipeInstructions: {},
       isRecipePageDisplay: true,
     };
