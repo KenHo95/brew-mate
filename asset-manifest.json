@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/brew-mate/static/css/main.a0882aec.css",
-    "main.js": "/brew-mate/static/js/main.2c2da986.js",
+    "main.css": "/brew-mate/static/css/main.3e5d3a8e.css",
+    "main.js": "/brew-mate/static/js/main.8d22cbfd.js",
     "static/js/787.0e41534f.chunk.js": "/brew-mate/static/js/787.0e41534f.chunk.js",
-    "static/media/coffee-garden-ai.jpg": "/brew-mate/static/media/coffee-garden-ai.aab0cca8345f0a2d4561.jpg",
+    "static/media/transparent.png": "/brew-mate/static/media/transparent.027df4ec129b70c0a9ce.png",
     "index.html": "/brew-mate/index.html",
-    "main.a0882aec.css.map": "/brew-mate/static/css/main.a0882aec.css.map",
-    "main.2c2da986.js.map": "/brew-mate/static/js/main.2c2da986.js.map",
+    "main.3e5d3a8e.css.map": "/brew-mate/static/css/main.3e5d3a8e.css.map",
+    "main.8d22cbfd.js.map": "/brew-mate/static/js/main.8d22cbfd.js.map",
     "787.0e41534f.chunk.js.map": "/brew-mate/static/js/787.0e41534f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0882aec.css",
-    "static/js/main.2c2da986.js"
+    "static/css/main.3e5d3a8e.css",
+    "static/js/main.8d22cbfd.js"
   ]
 }
