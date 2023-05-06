@@ -4,7 +4,7 @@ import Table from "react-bootstrap/Table";
 class RecipeDisplay extends React.Component {
   render() {
     return (
-      <Table bordered style={{ color: "white", width: "400px" }}>
+      <Table className="recipe-display-table">
         <thead>
           <tr>
             <th>Coffee</th>
