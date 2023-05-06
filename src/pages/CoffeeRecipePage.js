@@ -13,8 +13,20 @@ class CoffeeRecipePage extends React.Component {
       <div>
         <img src={logo} className="App-logo" alt="logo" />
 
-        {this.props.recipeTime === "-" && <ChooseRecipeMessage />}
+        {/* Inital recipe selection */}
+        {this.props.recipeTime === "-" && (
+          <div className="choose-recipe-container">
+            <ChooseRecipeMessage />
+            <br />
+            <div className="choose-recipe-container-dropdown">
+              <ViewRecipeDropDown
+                handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
+              />
+            </div>
+          </div>
+        )}
 
+        {/* Recipe Display */}
         {this.props.recipeTime !== "-" && (
           <RecipeDisplay
             recipeCoffeeGrams={this.props.recipeCoffeeGrams}
@@ -24,19 +36,23 @@ class CoffeeRecipePage extends React.Component {
           />
         )}
 
+        {/* Start Brew */}
         {this.props.recipeTime !== "-" && (
           <Button onClick={this.props.handleStartStopButtonClick}>
             {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
           </Button>
         )}
 
-        <div className="button-container">
-          <ViewRecipeDropDown
-            handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
-          />
+        {/* Subsequent recipe selection, FAQ, Preparation Button*/}
+        {this.props.recipeTime !== "-" && (
+          <div className="button-container">
+            <ViewRecipeDropDown
+              handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
+            />
 
-          <PreparationPopUp />
-        </div>
+            <PreparationPopUp />
+          </div>
+        )}
       </div>
     );
   }

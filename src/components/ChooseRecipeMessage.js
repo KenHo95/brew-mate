@@ -5,9 +5,7 @@ class ChooseRecipeMessage extends React.Component {
     return (
       <div>
         <br />
-        <br />
-        <br />
-        Choose Recipe
+        How would you like to brew today?
       </div>
     );
   }
