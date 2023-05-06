@@ -6,7 +6,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 class ViewRecipeDropDown extends React.Component {
   render() {
     return (
-      <div style={{ width: "1050px", alignSelf: "start" }}>
+      <div>
         <DropdownButton
           id="recipe-dropdown-button"
           title="View Recipes"

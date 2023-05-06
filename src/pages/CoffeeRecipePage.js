@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../coffee-garden-ai.jpg";
+import logo from "../transparent.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import RecipeDisplay from "../components/RecipeDisplay";
