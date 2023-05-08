@@ -18,6 +18,16 @@
   color: white;
 }
 
+.choose-recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose-recipe-container-dropdown {
+  min-width: 130px;
+}
+
 .button-container {
   display: flex;
   justify-content: space-between;
