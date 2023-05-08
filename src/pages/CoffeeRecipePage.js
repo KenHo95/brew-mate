@@ -6,6 +6,7 @@ import RecipeDisplay from "../components/RecipeDisplay";
 import ViewRecipeDropDown from "../components/ViewRecipeDropDown";
 import PreparationPopUp from "../components/PreparationPopUp";
 import ChooseRecipeMessage from "../components/ChooseRecipeMessage";
+import FAQPage from "../components/FAQPage";
 
 class CoffeeRecipePage extends React.Component {
   render() {
@@ -50,9 +51,13 @@ class CoffeeRecipePage extends React.Component {
               handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}
             />
 
-            <PreparationPopUp />
+            <PreparationPopUp
+              recipeCoffeeGrams={this.props.recipeCoffeeGrams}
+              recipeWaterML={this.props.recipeWaterML}
+            />
           </div>
         )}
+        <FAQPage />
       </div>
     );
   }

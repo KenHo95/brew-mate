@@ -1,6 +1,7 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 
+
 class RecipeDisplay extends React.Component {
   render() {
     return (

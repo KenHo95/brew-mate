@@ -32,17 +32,24 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
-  bottom: 50px;
+  bottom: 90px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 100%;
-  max-width: 1000px; /* optional: limit the container width */
+  width: 40%; /* optional: limit the container width */
 }
 
-.prep-button,
-.view-button {
-  width: 100px; /* optional: adjust button width */
+.prep-btn {
+  max-width: 100%; /* optional: adjust button width */
+  height: 40px;
+}
+
+.faq-btn {
+  position: fixed;
+  bottom: 900px;
+  right: 600px;
+  border-collapse: separate;
+  border-radius: 10% / 50%;
 }
 
 .recipe-display-table {
@@ -54,6 +61,8 @@
 }
 .recipe-display-table th,
 .recipe-display-table td {
+  min-width: 140px;
+  min-height: 115px;
   width: 50%;
   height: 50%;
   border: 1px solid white;
