@@ -8,9 +8,9 @@ class ViewRecipeDropDown extends React.Component {
     return (
       <div>
         <DropdownButton
-          id="recipe-dropdown-button"
-          title="View Recipes"
-          className="view-button"
+          // id="recipe-dropdown-button"
+          // title="View Recipes"
+          className="view-btn"
         >
           <Dropdown.Item
             onClick={() =>
