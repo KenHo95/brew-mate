@@ -28,15 +28,14 @@
   min-width: 130px;
 }
 
+.brew-btn {
+  margin: 20px;
+}
+
 .button-container {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  bottom: 90px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 40%; /* optional: limit the container width */
+  width: 100%; /* optional: limit the container width */
 }
 
 .prep-btn {

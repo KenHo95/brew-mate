@@ -43,9 +43,11 @@ class CoffeeRecipePage extends React.Component {
 
         {/* Start Brew */}
         {this.props.recipeTime !== "-" && (
-          <Button onClick={this.props.handleStartStopButtonClick}>
-            {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
-          </Button>
+          <div className="brew-btn">
+            <Button onClick={this.props.handleStartStopButtonClick}>
+              {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
+            </Button>
+          </div>
         )}
 
         {/* Subsequent recipe selection, FAQ, Preparation Button*/}

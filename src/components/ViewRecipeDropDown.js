@@ -9,7 +9,7 @@ class ViewRecipeDropDown extends React.Component {
       <div>
         <DropdownButton
           id="recipe-dropdown-button"
-          title="View Recipes"
+          title="Recipes "
           className="view-button"
           drop="down-centered"
         >
