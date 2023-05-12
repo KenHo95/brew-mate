@@ -11,7 +11,7 @@ function Example() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow} className="faq-btn">
+      <Button variant="primary" onClick={handleShow}>
         ?
       </Button>
 

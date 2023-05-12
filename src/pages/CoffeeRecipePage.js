@@ -12,6 +12,10 @@ class CoffeeRecipePage extends React.Component {
   render() {
     return (
       <div>
+        <div className="faq-btn">
+          <FAQPage />
+        </div>
+
         <img src={logo} className="App-logo" alt="logo" />
 
         {/* Inital recipe selection */}
@@ -39,9 +43,11 @@ class CoffeeRecipePage extends React.Component {
 
         {/* Start Brew */}
         {this.props.recipeTime !== "-" && (
-          <Button onClick={this.props.handleStartStopButtonClick}>
-            {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
-          </Button>
+          <div className="brew-btn">
+            <Button onClick={this.props.handleStartStopButtonClick}>
+              {this.props.isRecipePageDisplay ? "Brew" : "Stop"}
+            </Button>
+          </div>
         )}
 
         {/* Subsequent recipe selection, FAQ, Preparation Button*/}
@@ -57,7 +63,6 @@ class CoffeeRecipePage extends React.Component {
             />
           </div>
         )}
-        <FAQPage />
       </div>
     );
   }
