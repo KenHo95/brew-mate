@@ -45,11 +45,8 @@
 }
 
 .faq-btn {
-  position: fixed;
-  bottom: 900px;
-  right: 600px;
-  border-collapse: separate;
-  border-radius: 10% / 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .recipe-display-table {

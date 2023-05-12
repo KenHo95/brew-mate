@@ -12,6 +12,10 @@ class CoffeeRecipePage extends React.Component {
   render() {
     return (
       <div>
+        <div className="faq-btn">
+          <FAQPage />
+        </div>
+
         <img src={logo} className="App-logo" alt="logo" />
 
         {/* Inital recipe selection */}
@@ -57,7 +61,6 @@ class CoffeeRecipePage extends React.Component {
             />
           </div>
         )}
-        <FAQPage />
       </div>
     );
   }
