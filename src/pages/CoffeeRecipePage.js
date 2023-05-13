@@ -22,7 +22,6 @@ class CoffeeRecipePage extends React.Component {
         {this.props.recipeTime === "-" && (
           <div className="choose-recipe-container">
             <ChooseRecipeMessage />
-            <br />
             <div className="choose-recipe-container-dropdown">
               <ViewRecipeDropDown
                 handleRecipeDropdownClick={this.props.handleRecipeDropdownClick}

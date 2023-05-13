@@ -12,6 +12,7 @@ class ViewRecipeDropDown extends React.Component {
           title="Recipes "
           className="view-button"
           drop="down-centered"
+          variant="outline-primary"
         >
           <Dropdown.Item
             onClick={() =>

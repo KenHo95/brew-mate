@@ -10,7 +10,11 @@ export function PreparationPopUp(props) {
   let { recipeWaterML, recipeCoffeeGrams } = props;
   return (
     <>
-      <Button variant="primary" onClick={handleShow} className="prep-btn">
+      <Button
+        variant="outline-primary"
+        onClick={handleShow}
+        className="prep-btn"
+      >
         Preparation
       </Button>
 
