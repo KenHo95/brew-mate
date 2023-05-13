@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/brew-mate/static/css/main.f95ae8af.css",
-    "main.js": "/brew-mate/static/js/main.ceb9f152.js",
+    "main.css": "/brew-mate/static/css/main.476b61d3.css",
+    "main.js": "/brew-mate/static/js/main.c4e74ca3.js",
     "static/js/787.0e41534f.chunk.js": "/brew-mate/static/js/787.0e41534f.chunk.js",
     "static/media/transparent.png": "/brew-mate/static/media/transparent.027df4ec129b70c0a9ce.png",
     "index.html": "/brew-mate/index.html",
-    "main.f95ae8af.css.map": "/brew-mate/static/css/main.f95ae8af.css.map",
-    "main.ceb9f152.js.map": "/brew-mate/static/js/main.ceb9f152.js.map",
+    "main.476b61d3.css.map": "/brew-mate/static/css/main.476b61d3.css.map",
+    "main.c4e74ca3.js.map": "/brew-mate/static/js/main.c4e74ca3.js.map",
     "787.0e41534f.chunk.js.map": "/brew-mate/static/js/787.0e41534f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f95ae8af.css",
-    "static/js/main.ceb9f152.js"
+    "static/css/main.476b61d3.css",
+    "static/js/main.c4e74ca3.js"
   ]
 }
