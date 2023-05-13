@@ -40,8 +40,8 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 80%;
-
+  max-width: 440px;
+  width: 70%;
 }
 
 .prep-btn {
@@ -50,11 +50,8 @@
 }
 
 .faq-btn {
-  bottom: 700px;
-  right: 50px;
-  position: fixed;
-  z-index: 1000px;
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 .recipe-display-table {
