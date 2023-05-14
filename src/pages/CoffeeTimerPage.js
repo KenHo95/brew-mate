@@ -1,8 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TimerDisplay from "../components/TimerDisplay";
+import ElapsedTimerDisplay from "../components/ElapsedTimerDisplay";
 import Button from "react-bootstrap/Button";
 import InstructionsDisplay from "../components/InstructionsDisplay";
+import CountdownTimerDisplay from "../components/CountdownTimerDisplay";
 
 class CoffeeTimerPage extends React.Component {
   constructor(props) {
@@ -31,10 +32,17 @@ class CoffeeTimerPage extends React.Component {
 
     return (
       <div>
-        <TimerDisplay
+        <ElapsedTimerDisplay
           isTimerPaused={isTimerPaused}
           tick={this.tick}
           timeElapsed={this.state.timeElapsed}
+        />
+        <br />
+
+        <CountdownTimerDisplay
+          isPlaying={!isTimerPaused}
+          timeElapsed={this.state.timeElapsed}
+          recipeInstructions={this.props.recipeInstructions}
         />
         <br />
         <InstructionsDisplay
