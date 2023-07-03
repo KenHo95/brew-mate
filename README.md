@@ -1,10 +1,9 @@
-# Getting Started with Create React App
+# Overview
+An app with time based step by step V60 brewing instructions display and timer function.
+<br />
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+# Set up
 
 ### `npm start`
 
@@ -13,58 +12,45 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+<br /><br />
 
-### `npm test`
+# Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 1. Choose receipe
+User can choose a V60 receipe from the dropdown list.
+<br /><br />
 
-### `npm run build`
+Receipes credits
+- https://pouroverproject.com/v60-recipes-rao-hoffman-kasuya-drip-coffee/
+- https://www.youtube.com/watch?v=1oB1oDrDkHM
+<br /><br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. FAQ and Preparation Infomation
+User can view the FAQ and Preparation Infomation from the modal displayed by clicking the ? and Preparation button.
+<br /><br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 3. Time based step by step V60 brewing instructions display  
+User can follow the step by step V60 brewing instructions displayed depending the time interval that the brewing process is at.
+<br /><br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 4. Timer
+User can view the time elapsed information to determine whether the brew was longer or shorten than expected.
+User can also view the countdown timer animation guide the speed of pouring.
+<br /><br />
 
-### `npm run eject`
+# Future improvements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 1.Previous and Skip button 
+- To allow user to preview instructions without waiting for the timer.
+<br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 2.Brew Journal
+- To allow user to add their notes on their brew with the selected recipe. 
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 3.Save custom recipe
+- To allow user to add their brewing recipe.
+<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
