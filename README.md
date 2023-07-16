@@ -8,17 +8,18 @@ _**Landing page with V60 recipe dropdown list**_
 
 <!-- ![Landing Page](src/asset/landing-page.png) -->
 
-<kbd> <img src="src/asset/landing-page.png" /> </kbd>
+<kbd> <img src="src/asset/landing-page.png" alt="Landing Page" /> </kbd>
 <br/><br/><br/>
 _**View Recipe Page after a V60 recipe was chosen**_
 
 <!-- ![View Recipe Page](src/asset/view-recipe-page.png) -->
 
-<kbd> <img src="src/asset/view-recipe-page.png" /> </kbd>
-<br/><br/>
+<kbd> <img src="src/asset/view-recipe-page.png" alt="View Recipe Page"/> </kbd>
+<br/><br/><br/>
 _**Timer Instructions Page after pressing the brew button**_
 
-![Timer Instructions Page](src/asset/timer-instructions-page.png)
+<!-- ![Timer Instructions Page](src/asset/timer-instructions-page.png) -->
+<kbd> <img src="src/asset/timer-instructions-page.png" alt="Timer Instructions Page"/> </kbd>
 
 ## 💻 Technologies Used
 
