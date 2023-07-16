@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Table from "react-bootstrap/Table";
+import "./InstructionsDisplay.css";
 
 class InstructionsDisplay extends React.Component {
   render() {
@@ -18,10 +19,7 @@ class InstructionsDisplay extends React.Component {
       ];
 
     return (
-      <Table
-        bordered
-        style={{ color: "white", width: "400px", height: "200px" }}
-      >
+      <Table bordered className="instruction-display">
         <thead>
           <tr>
             <th>Instructions</th>
@@ -29,7 +27,17 @@ class InstructionsDisplay extends React.Component {
         </thead>
         <tbody>
           <tr>
-            <td>{currentInstruction}</td>
+            <td>
+              <ol>
+                {currentInstruction.map((instructionList, ind) => {
+                  return (
+                    <li className="instruction-display-list" key={ind}>
+                      {instructionList}
+                    </li>
+                  );
+                })}
+              </ol>
+            </td>
           </tr>
         </tbody>
       </Table>

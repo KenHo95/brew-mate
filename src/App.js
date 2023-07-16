@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import "./components/CountdownTimerDisplay.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import CoffeeRecipePage from "./pages/CoffeeRecipePage";
 import CoffeeTimerPage from "./pages/CoffeeTimerPage";
 

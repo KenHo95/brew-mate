@@ -79,3 +79,8 @@
   text-align: center;
   color: white;
 }
+
+.instruction-display {
+  color: white;
+  width: 400px;
+}
