@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/brew-mate/static/css/main.fecb364f.css",
-    "main.js": "/brew-mate/static/js/main.d3475b58.js",
-    "static/js/787.0e41534f.chunk.js": "/brew-mate/static/js/787.0e41534f.chunk.js",
-    "static/media/transparent.png": "/brew-mate/static/media/transparent.027df4ec129b70c0a9ce.png",
+    "main.css": "/brew-mate/static/css/main.ba029693.css",
+    "main.js": "/brew-mate/static/js/main.c4d64b40.js",
+    "static/media/coffee-app-logo.png": "/brew-mate/static/media/coffee-app-logo.027df4ec129b70c0a9ce.png",
     "index.html": "/brew-mate/index.html",
-    "main.fecb364f.css.map": "/brew-mate/static/css/main.fecb364f.css.map",
-    "main.d3475b58.js.map": "/brew-mate/static/js/main.d3475b58.js.map",
-    "787.0e41534f.chunk.js.map": "/brew-mate/static/js/787.0e41534f.chunk.js.map"
+    "main.ba029693.css.map": "/brew-mate/static/css/main.ba029693.css.map",
+    "main.c4d64b40.js.map": "/brew-mate/static/js/main.c4d64b40.js.map"
   },
   "entrypoints": [
-    "static/css/main.fecb364f.css",
-    "static/js/main.d3475b58.js"
+    "static/css/main.ba029693.css",
+    "static/js/main.c4d64b40.js"
   ]
 }
